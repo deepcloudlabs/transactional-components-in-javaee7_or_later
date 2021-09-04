@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Trading API</title>
+</head>
+<body>
+	<ul>
+		<li>
+			<h4>curl -X POST "http://localhost:8080/trading/api/v1/trades"
+				-d "{\"symbol\": \"gogle\", \"price\": \"128.23\", \"quantity\":
+				\"10000\"}" -H "Accept: application/json" -H "Content-Type:
+				application/json"</h4>
+		</li>
+		<li>
+			<h4>curl -X PUT
+				"http://localhost:8080/trading/api/v1/trades/gogle" -d "{\"symbol\":
+				\"gogle\", \"price\": \"114.44\", \"quantity\": \"40000\"}" -H
+				"Accept: application/json" -H "Content-Type: application/json"</h4>
+		</li>
+		<li>
+			<h4>curl -X GET "http://localhost:8080/trading/api/v1/trades" -H
+				"Accept: application/json"</h4>
+		</li>
+		<li>
+			<h4>curl -X PUT
+				"http://localhost:8080/trading/api/v1/trades/gogle" -H "Accept:
+				application/json"</h4>
+		</li>
+	</ul>
+</body>
+</html>
